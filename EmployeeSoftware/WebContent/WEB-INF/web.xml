@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>EmployeeSoftware</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 1 -->
+  <servlet>
+  	<servlet-name>Generate_Salary</servlet-name>  
+  	<servlet-class>Generate_Salary</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>Generate_Salary</servlet-name>
+  		<url-pattern>/servlet/Generate_Salary</url-pattern>
+  </servlet-mapping>
+  <!-- 2 -->
+  <servlet>
+  	<servlet-name>RegisterEmployee</servlet-name>  
+  	<servlet-class>RegisterEmployee</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>RegisterEmployee</servlet-name>
+  		<url-pattern>/servlet/RegisterEmployee</url-pattern>
+  </servlet-mapping>
+  <!-- 3 -->
+  <servlet>
+  	<servlet-name>SalarySlip</servlet-name>  
+  	<servlet-class>SalarySlip</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>SalarySlip</servlet-name>
+  		<url-pattern>/servlet/SalarySlip</url-pattern>
+  </servlet-mapping>
+  <!-- 4 -->
+  <servlet>
+  	<servlet-name>SearchUpdate</servlet-name>  
+  	<servlet-class>SearchUpdate</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>SearchUpdate</servlet-name>
+  		<url-pattern>/servlet/SearchUpdate</url-pattern>
+  </servlet-mapping>
+  <!-- 5 -->
+  <servlet>
+  	<servlet-name>SearchDel</servlet-name>  
+  	<servlet-class>SearchDel</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>SearchDel</servlet-name>
+  		<url-pattern>/servlet/SearchDel</url-pattern>
+  </servlet-mapping>
+  <!-- 6 -->
+  <servlet>
+  	<servlet-name>AllEmployees</servlet-name>  
+  	<servlet-class>AllEmployees</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>AllEmployees</servlet-name>
+  		<url-pattern>/servlet/AllEmployees</url-pattern>
+  </servlet-mapping>
+  <!-- 7 -->
+  <servlet>
+  	<servlet-name>SalarySheetDB</servlet-name>  
+  	<servlet-class>SalarySheetDB</servlet-class>   
+  	<init-param>
+  		<param-name>heading1</param-name>
+  		<param-value>Register</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url1</param-name>
+  		<param-value>RegisterEmployee</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading2</param-name>
+  		<param-value>Search Update</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url2</param-name>
+  		<param-value>SearchUpdate</param-value>
+  	</init-param> 	
+  	<init-param>
+  		<param-name>heading3</param-name>
+  		<param-value>Search Delete</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url3</param-name>
+  		<param-value>SearchDel</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading4</param-name>
+  		<param-value>Show All</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url4</param-name>
+  		<param-value>AllEmployees</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading5</param-name>
+  		<param-value>Generate Salary</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url5</param-name>
+  		<param-value>Generate_Salary</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading6</param-name>
+  		<param-value>Salary Slip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url6</param-name>
+  		<param-value>SalarySlip</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>heading7</param-name>
+  		<param-value>Salary Sheet</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url7</param-name>
+  		<param-value>SalarySheetDB</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>heading8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url8</param-name>
+  		<param-value>Logout</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>footer1</param-name>
+  		<param-value>2020. All rights Reserved</param-value>
+  	</init-param>
+  </servlet>
+   <servlet-mapping>
+  		<servlet-name>SalarySheetDB</servlet-name>
+  		<url-pattern>/servlet/SalarySheetDB</url-pattern>
+  </servlet-mapping>
+</web-app>
