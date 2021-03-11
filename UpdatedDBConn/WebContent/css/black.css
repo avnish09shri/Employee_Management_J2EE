@@ -1,0 +1,97 @@
+.navright{
+    float: right;
+}
+.nav2{
+    color: black;
+    
+}
+.navr{
+    color: black;
+    float: right;
+}
+#head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+}
+body{
+    background-color:lightgrey;
+}
+.service{
+   background-color: white;
+   margin-top:2px;
+   padding-top: 6px;
+   padding-bottom:6px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.three{
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 170px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.chauffeur{
+    font-size: xx-large;
+  
+}
+.download{
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 50px;    
+}
+.download span{
+    font-size: x-large;
+}
+
+.tabSection {
+    background: #fff;
+    margin: -55px 0 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: navajowhite;
+}
+
+.tab button {
+  background-color: #f0f2f7;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 19px;
+  width: 50%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 15px 20px;
+  border: none;
+  border-top: none;
+}
+
+.tabSection .form-group {background: #f0f2f7;padding: 6px 15px;}
+
+.tabSection .form-control {border: none;background: transparent;padding-left: 0;padding-top: 0;}
+
+.tabSection .tabcontent button {width: 100%;border: none;background: #ff4c00;color: #fff;padding: 10px;font-weight: bold;font-size: 18px;border-radius: 4px;}
